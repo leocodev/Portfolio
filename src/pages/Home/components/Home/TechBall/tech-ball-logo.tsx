@@ -1,0 +1,15 @@
+import React, { useContext } from 'react'
+import { ThemeContext } from '../../../../../App'
+
+const TechBallLogoBacklight = () => {
+  const theme = useContext(ThemeContext)
+  return (
+    <div
+      className={`absolute inset-0 animate-[tech-ball-fade_linear_infinite_5s] bg-contain bg-[center] bg-no-repeat brightness-125
+        ${theme.logo}
+      `}
+    />
+  )
+}
+
+export default TechBallLogoBacklight
